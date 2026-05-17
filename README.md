@@ -1,16 +1,38 @@
-# React + Vite
+# SkillUp 🚀
+An advanced and interactive skill development and training management platform custom-built for **JODAYM company**. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🌟 Project Overview
+**SkillUp** is a comprehensive solution designed to streamline the learning and development journey within organization. It empowers employees to track their growth, manage training tracks, and enables administrators to monitor progress and scale organizational capabilities efficiently through an intuitive, role-based ecosystem.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+This project is built using a modern, scalable, and high-performance development stack:
+* **Frontend:** React.js (Powered by Vite for blazing-fast HMR)
+* **Styling:** Tailwind CSS (For a modern, clean, and fully responsive UI/UX)
+* **Backend & Database:** Firebase (Authentication, Firestore Realtime Database)
+* **State & Tools:** ESLint, PostCSS
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Key Features & Architecture
 
-## Expanding the ESLint configuration
+### 👥 Role-Based Dashboard Ecosystem
+The platform layout is fully tailored based on user privileges to ensure security and productivity:
+* **Admin Portal:** Comprehensive management tools including Admin SignUp/Login, Training Tracks Oversight (`ViewTrainings`), and administrative Personal Info management.
+* **Employee Hub:** Personal learning dashboard features including tracking `LearningJourney`, managing `FavoriteCourses`, monitoring `CompletedCourses`, and personal profile management.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔐 Secure Authentication & Services
+* **Firebase Auth & Protected Routes:** Strict route guards (`ProtectedRoute.jsx`) preventing unauthorized access based on user roles.
+* **Smart Recovery:** Automated `ForgotPassword` handlers and seamless dynamic email services (`emailService.js`).
+
+---
+
+## 🚀 Getting Started
+
+To run this project locally on your machine, follow these simple steps:
+
+### 1. Clone the repository
+```bash
+git clone [https://github.com/Rah2falsh/SkillUp.git](https://github.com/Rah2falsh/SkillUp.git)
+cd SkillUp
