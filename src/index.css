@@ -1,0 +1,86 @@
+/* Tailwind base */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700;800&display=swap');
+
+/* Root Colors */
+:root {
+  --sk-bg: #EAECDC;       
+  --sk-primary: #325443;  
+}
+
+/* Body Styling */
+body {
+  background-color: var(--sk-bg) !important;
+  color: var(--sk-primary) !important;
+  font-family: "Tajawal", sans-serif !important;
+}
+
+/* Glass Components */
+.glass {
+  background: rgba(234,236,220,0.4);  /* بيج شفاف من نفس اللون */
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(50,84,67,0.3); /* أخضر شفاف */
+}
+
+.glass-deep {
+  background: rgba(50,84,67,0.92);   
+  color: #EAECDC !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(234,236,220,0.3);
+}
+
+/* ثابت */
+.btn-sk {
+  background-color: var(--sk-primary) !important;
+  color: #fff !important;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 10px 18px;
+  transition: 0.3s;
+}
+.btn-sk:hover {
+  opacity: 0.9;
+}/* ===== Animated background for Admin Welcome ===== */
+.bg-animated {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    background:
+      radial-gradient(1200px 600px at -10% -10%, rgba(50,84,67,0.08), transparent 60%),
+      radial-gradient(900px 500px at 110% 20%, rgba(50,84,67,0.10), transparent 60%),
+      radial-gradient(600px 400px at 30% 110%, rgba(50,84,67,0.08), transparent 60%),
+      #EAECDC;
+    overflow: hidden;
+  }
+  
+  .bg-animated::before,
+  .bg-animated::after {
+    content: "";
+    position: absolute;
+    width: 42vmin;
+    height: 42vmin;
+    border-radius: 50%;
+    background: rgba(50,84,67,0.12);
+    filter: blur(14px);
+    animation: floaty 18s ease-in-out infinite;
+  }
+  
+  .bg-animated::after {
+    width: 50vmin;
+    height: 50vmin;
+    left: 70%;
+    top: 10%;
+    background: rgba(50,84,67,0.10);
+    animation-duration: 22s;
+    animation-delay: -5s;
+  }
+  
+  @keyframes floaty {
+    0%   { transform: translate(0,0) scale(1);   opacity: .55; }
+    50%  { transform: translate(-4vw, 3vh) scale(1.05); opacity: .7; }
+    100% { transform: translate(0,0) scale(1);   opacity: .55; }
+  }
