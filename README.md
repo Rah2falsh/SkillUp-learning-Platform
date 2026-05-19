@@ -1,38 +1,104 @@
-# SkillUp 🚀
-An advanced and interactive skill development and training management platform custom-built for **JODAYM company**. 
+# SkillUp
+
+SkillUp is a centralized learning and development platform designed for employees who are committed to continuous learning and professional growth.
+
+The platform helps organizations organize training opportunities in one place, making it easier for employees to discover relevant courses, certifications, bootcamps, and learning resources based on their departments and career paths.
 
 ---
 
-## 🌟 Project Overview
-**SkillUp** is a comprehensive solution designed to streamline the learning and development journey within organization. It empowers employees to track their growth, manage training tracks, and enables administrators to monitor progress and scale organizational capabilities efficiently through an intuitive, role-based ecosystem.
+## Overview
 
-## 🛠️ Tech Stack
-This project is built using a modern, scalable, and high-performance development stack:
-* **Frontend:** React.js (Powered by Vite for blazing-fast HMR)
-* **Styling:** Tailwind CSS (For a modern, clean, and fully responsive UI/UX)
-* **Backend & Database:** Firebase (Authentication, Firestore Realtime Database)
-* **State & Tools:** ESLint, PostCSS
+Many employees struggle to find high-quality learning resources due to scattered platforms and unorganized training content.  
+SkillUp solves this problem by providing a modern internal platform that simplifies access to professional development opportunities.
+
+The system supports role-based access for both employees and administrators through a dedicated role selection flow.
 
 ---
 
-## ✨ Key Features & Architecture
+## Features
 
-### 👥 Role-Based Dashboard Ecosystem
-The platform layout is fully tailored based on user privileges to ensure security and productivity:
-* **Admin Portal:** Comprehensive management tools including Admin SignUp/Login, Training Tracks Oversight (`ViewTrainings`), and administrative Personal Info management.
-* **Employee Hub:** Personal learning dashboard features including tracking `LearningJourney`, managing `FavoriteCourses`, monitoring `CompletedCourses`, and personal profile management.
+### Employee Features
+- Sign up & login using company email
+- Browse training courses
+- Search and filter courses
+- Save courses to favorites
+- Register for training programs
+- Mark courses as completed
+- Track learning progress
+- Manage personal profile
 
-### 🔐 Secure Authentication & Services
-* **Firebase Auth & Protected Routes:** Strict route guards (`ProtectedRoute.jsx`) preventing unauthorized access based on user roles.
-* **Smart Recovery:** Automated `ForgotPassword` handlers and seamless dynamic email services (`emailService.js`).
+### Admin Features
+- Add new courses
+- Edit or delete courses
+- Manage training categories
+- Monitor training analytics
+- Manage platform content
 
 ---
 
-## 🚀 Getting Started
+## Technologies Used
 
-To run this project locally on your machine, follow these simple steps:
+### Frontend
+- React.js
+- HTML
+- CSS
+- JavaScript
 
-### 1. Clone the repository
-```bash
-git clone [https://github.com/Rah2falsh/SkillUp.git](https://github.com/Rah2falsh/SkillUp.git)
-cd SkillUp
+### Backend & Database
+- Firebase Authentication
+- Firebase Firestore
+
+### UI/UX Design
+- Figma
+
+---
+
+## Why Firebase?
+
+Firebase was selected because it provides:
+- Fast and simplified development
+- Built-in authentication services
+- Secure cloud database
+- Real-time data handling
+- No need for traditional backend servers or complex PHP setups
+
+This makes it an ideal solution for modern web applications like SkillUp.
+
+---
+
+## System Roles
+
+The platform includes two main user roles:
+- Employee
+- Admin
+
+Users begin by selecting their role through the **Choose Your Role** interface before accessing the system.
+
+---
+
+## Goals
+
+SkillUp aims to:
+- Encourage continuous learning
+- Improve employee development
+- Reduce time spent searching for training
+- Organize learning resources efficiently
+- Support professional growth within organizations
+
+---
+
+## Status
+
+Live and fully functional web application.
+
+---
+
+## Preview
+
+UI/UX interfaces were designed in Figma and implemented using React.js to provide a modern and smooth user experience.
+
+---
+
+## Author
+
+Developed and designed by **Eng. Rahaf Alshammari**
